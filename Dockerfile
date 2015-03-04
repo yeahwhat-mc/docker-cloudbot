@@ -18,6 +18,7 @@ RUN pip3 install -r /opt/cloudbot/requirements.txt
 
 # Expose volume
 VOLUME ["/opt/cloudbot/data"]
+VOLUME ["/opt/cloudbot/plugins"]
 
 # Start actual haste-server
 CMD python3 -m cloudbot
