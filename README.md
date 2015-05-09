@@ -19,4 +19,4 @@ Dockerized version of the great Python based IRC bot [CloudBot](https://github.c
 1.0.0
 
 ### Lincense
-[WTFPL](LICENSE)
+[MIT](LICENSE)
