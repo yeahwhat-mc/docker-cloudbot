@@ -5,9 +5,9 @@ Dockerized version of the great Python based IRC bot [CloudBot](https://github.c
 ### Installation
 
 1. Clone repository:  
-  `git clone https://github.com/frdmn/docker-hastebin.git /opt/hastebin`
+  `git clone https://github.com/frdmn/docker-cloudbot.git /opt/docker-cloudbot`
 1. Adjust configuration:  
-  `cd /opt/hastebin`  
+  `cd /opt/docker-cloudbot`  
   `cp opt/config.default.json opt/config.json`  
   `vi opt/config.json`  
 1. Build docker image:  
