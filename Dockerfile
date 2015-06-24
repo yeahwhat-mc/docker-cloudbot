@@ -7,7 +7,7 @@ RUN apt-get update
 RUN apt-get install -y python3-pip git libenchant1c2a libxml2-dev libxslt-dev zlib1g-dev
 
 # Clone CloudBot from GitHub
-RUN git clone https://github.com/CloudBotIRC/CloudBot.git /opt/cloudbot
+RUN git clone https://github.com/yeahwhat-mc/CloudBot.git /opt/cloudbot
 
 # Install Python dependencies
 RUN pip3 install -r /opt/cloudbot/requirements.txt
