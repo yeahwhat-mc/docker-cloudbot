@@ -18,7 +18,6 @@ WORKDIR /opt/cloudbot
 
 # Expose volume
 VOLUME ["/opt/cloudbot/data"]
-VOLUME ["/opt/cloudbot/plugins"]
 
 # Start actual haste-server
 CMD python3 -m cloudbot
