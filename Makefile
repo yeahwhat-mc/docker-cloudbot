@@ -8,7 +8,7 @@ SHELL := /bin/bash
 all: build run
 
 build:
-	docker build -t "$(AUTHOR)/$(NAME):$(VERSION)" .
+	docker build --no-cache -t "$(AUTHOR)/$(NAME):$(VERSION)" .
 
 stop:
 	@if [[ "$(shell docker inspect -f {{.State.Running}} "$(NAME)" 2> /dev/null)" == "true" ]]; then \
