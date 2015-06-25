@@ -28,4 +28,4 @@ remove:
 
 run: stop remove
 	@printf "INFO: Starting new container '$(NAME)' ..."
-	@docker run --restart=always -d --name="$(NAME)" -v $(shell pwd)/storage/data:/opt/cloudbot/data $(AUTHOR)/$(NAME):$(VERSION) &> /dev/null && printf " done!\n" || printf " failed!\n"
+	@docker run --restart=always -d --name="$(NAME)" -v $(shell pwd)/storage/logs:/opt/cloudbot/logs $(AUTHOR)/$(NAME):$(VERSION) &> /dev/null && printf " done!\n" || printf " failed!\n"
