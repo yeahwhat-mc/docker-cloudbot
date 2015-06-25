@@ -17,7 +17,7 @@ ADD opt/config.json /opt/cloudbot/
 WORKDIR /opt/cloudbot
 
 # Expose volume
-VOLUME ["/opt/cloudbot/data"]
+VOLUME ["/opt/cloudbot/logs"]
 
 # Start actual haste-server
 CMD python3 -m cloudbot
